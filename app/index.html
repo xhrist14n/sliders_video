@@ -28,13 +28,83 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <div style="min-height: 50px;">
+          <!-- Jssor Slider Begin -->
+          <!-- To move inline styles to css file/block, please specify a class name for each element. -->
+          <!-- ================================================== -->
+          <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto;top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <!-- Loading Screen -->
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+              <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;top: 0px; left: 0px; width: 100%; height: 100%;">
+              </div>
+              <div style="position: absolute; display: block; background: url(https://xhrist14n.github.io/sliders_jssor/app/images/icons/loading.gif) no-repeat center center;
+              top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+          </div>
+          <!-- Slides Container -->
+          <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <div u="player">
+              <iframe pHandler="ytiframe" pHideControls="0" width="640" height="390" style="z-index: 0;" url="http://www.youtube.com/embed/H7jtC8vjXw8?enablejsapi=1&version=3&playerapiid=ytplayer&fs=1&wmode=transparent" frameborder="0" scrolling="no"></iframe>
+                    <!-- play cover begin (optional, can remove play cover) -->
+              <div u="cover" class="videoCover" style="position: absolute; top: 0px; left: 0px; background-color: #000; background-image: url(../img/play.png); background-position: center center; background-repeat: no-repeat; filter: alpha(opacity=40); opacity: .4; cursor: pointer; display: none; z-index: 1;"></div>
+            </div>
+            <div>
+              <img u="image" src2="https://xhrist14n.github.io/sliders_jssor/app/images/dental/two.png" />
+              <div data-u="caption" data-t="4" style="position: absolute; top: 30px; left: 30px; width: 350px; height: 30px; background-color: rgba(39,124,145, 0.35); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">
+                image, text, and custom layers
+              </div>
+
+            </div>
+            <div>
+              <img u="image" src2="https://xhrist14n.github.io/sliders_jssor/app/images/dental/one.png" />
+              <div data-u="caption" data-t="4" style="position: absolute; top: 30px; left: 30px; width: 350px; height: 30px; background-color: rgba(39,124,145, 0.35); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">
+                image, text, and custom layers
+              </div>
+
+            </div>
+            <div>
+              <img u="image" src2="https://xhrist14n.github.io/sliders_jssor/app/images/dental/two.png" />
+              <div data-u="caption" data-t="4" style="position: absolute; top: 30px; left: 30px; width: 350px; height: 30px; background-color: rgba(39,124,145, 0.35); font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;">
+                image, text, and custom layers
+              </div>
+
+            </div>
+          </div>
+
+          <!--#region Bullet Navigator Skin Begin -->
+          <!-- Help: http://www.jssor.com/tutorial/set-bullet-navigator.html -->
+          <!-- bullet navigator container -->
+          <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype"></div>
+          </div>
+          <!--#endregion Bullet Navigator Skin End -->
+
+          <!--#region Arrow Navigator Skin Begin -->
+          <!-- Help: http://www.jssor.com/tutorial/set-arrow-navigator.html -->
+          <!-- Arrow Left -->
+          <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
+          </span>
+          <!-- Arrow Right -->
+          <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
+          </span>
+          <!--#endregion Arrow Navigator Skin End -->
+
+        </div>
+        <!-- Jssor Slider End -->
+      </div>
 
 
-
+      <!-- Example to add fixed static share buttons in slider BEGIN -->
+    <span u="arrowleft" class="jssora21l" style="top: 222.5px; left: 8px; display: none;" autocenter="2">
+    </span>
+    <span u="arrowright" class="jssora21r" style="top: 222.5px; right: 8px; display: none;" autocenter="2">
+    </span>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jssor-slider/js/jssor.slider.mini.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
